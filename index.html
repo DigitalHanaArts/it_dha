@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="it">
+<html lang="it-IT">
 
 <head>
 
@@ -13,22 +13,22 @@
 
     <meta
         name="description"
-        content="Creatività computazionale all'intersezione tra arte, dati, intelligenza artificiale e blockchain."
+        content="Digital Hana Arts® — Creatività computazionale all'incrocio tra arte, dati, intelligenza artificiale e blockchain. Espressionismo astratto post-postmoderno, intessuto nel patrimonio italiano — bottega, tondo, grottesche, cosmatesco."
     >
 
     <meta
         name="theme-color"
-        content="#07070b"
+        content="#0a0c10"
     >
 
     <meta
         property="og:title"
-        content="Digital__Hana__Arts®"
+        content="Digital Hana Arts® — Motore Astratto"
     >
 
     <meta
         property="og:description"
-        content="Arte × Dati × Intelligenza × Blockchain"
+        content="Arte × Dati × Intelligenza × Blockchain × Astrazione"
     >
 
     <meta
@@ -42,12 +42,12 @@
     >
 
     <title>
-        Digital__Hana__Arts® — Arte × Dati × Intelligenza
+        Digital Hana Arts® — [Motore Astratto]
     </title>
 
 
     <!-- =====================================================
-         FONTS
+         CARATTERI · FONTS
     ====================================================== -->
 
     <link
@@ -62,7 +62,7 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;0,6..96,900;1,6..96,400;1,6..96,700;1,6..96,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Marcellus&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap"
         rel="stylesheet"
     >
 
@@ -70,104 +70,84 @@
     <style>
 
         /* =====================================================
-           DHA — GLOBAL
+           D.H.A. — PROTOCOLLO ASTRATTO · EDIZIONE ITALIANA
+           (Bottega · Tondo · Cosmatesco · Grottesche · Bodoni)
         ====================================================== */
 
         :root {
 
-            --bg: #07070b;
-            --bg-soft: #0d0d14;
+            /* notte · inchiostro — night · ink */
+            --notte: #0a0c10;
+            --notte-2: #12161c;
+            --notte-3: #1a2028;
 
-            --text: #f5f5f7;
-            --muted: #9b9ba8;
+            /* marmo di Carrara — Carrara marble */
+            --marmo: #f0e8d8;
+            --marmo-2: #c9bfa8;
+            --cenere: #8a8474;
+            --ombra: #4a453c;
 
-            --line:
-                rgba(255,255,255,.10);
+            /* marmi colorati — colored marbles */
+            --verde-verona: #3a5a45;      /* Verona green */
+            --verde-basilica: #1e4d3a;    /* basilica green */
+            --rosso-pompei: #a8201a;      /* Pompeii red */
+            --rosso-venezia: #7d1a1a;     /* Venetian red */
+            --oro-bisanzio: #c9a227;      /* Byzantine gold */
+            --azzurro-giotto: #4a7bb8;    /* Giotto sky */
+            --terracotta: #b8613c;        /* Tuscan terracotta */
 
-            --cyan: #00e5ff;
-            --violet: #8b5cf6;
-            --pink: #ff3cac;
-            --orange: #ff9f43;
+            --filo: rgba(240,232,216,.22);
+            --filo-tenue: rgba(240,232,216,.07);
 
-            --radius: 24px;
-
-            --max-width: 1240px;
+            --larghezza: 1400px;
 
         }
 
 
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
 
         html {
             scroll-behavior: smooth;
+            background: var(--notte);
         }
 
 
         body {
 
-            margin: 0;
-            padding: 0;
+            background: var(--notte);
 
-            background:
-
-                radial-gradient(
-                    circle at 15% 15%,
-                    rgba(139,92,246,.14),
-                    transparent 28%
-                ),
-
-                radial-gradient(
-                    circle at 85% 30%,
-                    rgba(0,229,255,.10),
-                    transparent 28%
-                ),
-
-                radial-gradient(
-                    circle at 50% 90%,
-                    rgba(255,60,172,.09),
-                    transparent 30%
-                ),
-
-                var(--bg);
-
-            color: var(--text);
+            color: var(--marmo);
 
             font-family:
-                "Inter",
+                "Manrope",
+                "Cormorant Garamond",
                 system-ui,
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
                 sans-serif;
 
             overflow-x: hidden;
 
-        }
+            cursor: crosshair;
 
+            position: relative;
 
-        a {
-
-            color: inherit;
-
-            text-decoration: none;
+            line-height: 1.8;
 
         }
 
 
         ::selection {
-
-            background: var(--pink);
-
-            color: white;
-
+            background: var(--rosso-pompei);
+            color: var(--marmo);
         }
 
 
         /* =====================================================
-           AMBIENT GRID
+           TEXTURE · CARTA MARMORIZZATA
         ====================================================== */
 
         body::before {
@@ -180,161 +160,282 @@
 
             pointer-events: none;
 
+            z-index: 9997;
+
+            opacity: .05;
+
             background-image:
 
-                linear-gradient(
-                    rgba(255,255,255,.025) 1px,
-                    transparent 1px
-                ),
-
-                linear-gradient(
-                    90deg,
-                    rgba(255,255,255,.025) 1px,
-                    transparent 1px
+                repeating-conic-gradient(
+                    from 0deg,
+                    rgba(240,232,216,.12) 0deg,
+                    rgba(0,0,0,.10) 1deg,
+                    rgba(240,232,216,.06) 2deg,
+                    rgba(0,0,0,.06) 3deg
                 );
 
-            background-size:
-                70px 70px;
-
-            mask-image:
-                linear-gradient(
-                    to bottom,
-                    black,
-                    transparent 80%
-                );
-
-            z-index: -3;
+            mix-blend-mode: overlay;
 
         }
 
 
-        /* =====================================================
-           FLOATING LIGHT
-        ====================================================== */
+        /* affresco sfumato — soft glow of fresco pigments */
 
-        .orb {
+        body::after {
+
+            content: "";
 
             position: fixed;
 
-            width: 320px;
-            height: 320px;
-
-            border-radius: 50%;
-
-            filter: blur(90px);
-
-            opacity: .15;
+            inset: 0;
 
             pointer-events: none;
 
-            z-index: -2;
+            z-index: 9996;
 
-        }
+            background:
 
+                radial-gradient(
+                    ellipse 60% 40% at 18% 12%,
+                    rgba(168,32,26,.09),
+                    transparent 55%
+                ),
 
-        .orb.one {
+                radial-gradient(
+                    ellipse 55% 45% at 84% 32%,
+                    rgba(74,123,184,.09),
+                    transparent 55%
+                ),
 
-            background: var(--violet);
+                radial-gradient(
+                    ellipse 50% 35% at 50% 92%,
+                    rgba(201,162,39,.08),
+                    transparent 60%
+                ),
 
-            top: 5%;
-            left: -100px;
+                repeating-linear-gradient(
+                    0deg,
+                    transparent 0px,
+                    transparent 2px,
+                    rgba(240,232,216,.014) 3px,
+                    transparent 4px
+                );
 
-            animation:
-                floatOne 14s ease-in-out infinite;
+            mix-blend-mode: screen;
 
-        }
-
-
-        .orb.two {
-
-            background: var(--cyan);
-
-            top: 40%;
-            right: -120px;
-
-            animation:
-                floatTwo 18s ease-in-out infinite;
-
-        }
-
-
-        .orb.three {
-
-            background: var(--pink);
-
-            bottom: -100px;
-            left: 40%;
-
-            animation:
-                floatThree 16s ease-in-out infinite;
-
-        }
-
-
-        @keyframes floatOne {
-
-            0%, 100% {
-                transform:
-                    translate(0, 0);
-            }
-
-            50% {
-                transform:
-                    translate(100px, 80px);
-            }
-
-        }
-
-
-        @keyframes floatTwo {
-
-            0%, 100% {
-                transform:
-                    translate(0, 0);
-            }
-
-            50% {
-                transform:
-                    translate(-80px, -60px);
-            }
-
-        }
-
-
-        @keyframes floatThree {
-
-            0%, 100% {
-                transform:
-                    translate(0, 0);
-            }
-
-            50% {
-                transform:
-                    translate(60px, -80px);
-            }
+            animation: affresco-respira 18s ease-in-out infinite;
 
         }
 
 
         /* =====================================================
-           NAVIGATION
+           ANIMAZIONI · KEYFRAMES
+        ====================================================== */
+
+        @keyframes affresco-respira {
+
+            0%, 100% { opacity: .85; }
+            50% { opacity: 1; }
+
+        }
+
+
+        @keyframes grottesca-moto {
+
+            0% {
+                transform: translate(0, 0);
+                clip-path: inset(0 0 0 0);
+            }
+            6% {
+                transform: translate(-2px, 2px);
+                clip-path: inset(12% 0 76% 0);
+            }
+            12% {
+                transform: translate(3px, -1px);
+                clip-path: inset(42% 0 38% 0);
+            }
+            18% {
+                transform: translate(-1px, -3px);
+                clip-path: inset(68% 0 12% 0);
+            }
+            24% {
+                transform: translate(0, 0);
+                clip-path: inset(0 0 0 0);
+            }
+            100% {
+                transform: translate(0, 0);
+                clip-path: inset(0 0 0 0);
+            }
+
+        }
+
+
+        @keyframes grottesca-clip {
+
+            0%, 100% { clip-path: inset(0 0 0 0); }
+            10% { clip-path: inset(22% 0 58% 0); }
+            20% { clip-path: inset(78% 0 12% 0); }
+            30% { clip-path: inset(38% 0 32% 0); }
+            40% { clip-path: inset(8% 0 88% 0); }
+            50% { clip-path: inset(0 0 0 0); }
+
+        }
+
+
+        @keyframes luce-scende {
+
+            0% { top: -100%; }
+            100% { top: 200%; }
+
+        }
+
+
+        @keyframes ruota-oraria {
+
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+
+        }
+
+
+        @keyframes ruota-antioraria {
+
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+
+        }
+
+
+        @keyframes fiamma {
+
+            0%, 100% { opacity: .55; transform: scale(1); }
+            50% { opacity: .92; transform: scale(1.03); }
+
+        }
+
+
+        @keyframes cosmatesco-scivola {
+
+            0% { background-position: 0 0, 24px 24px, 48px 48px; }
+            100% { background-position: 48px 48px, 72px 72px, 96px 96px; }
+
+        }
+
+
+        /* =====================================================
+           LINEA DI LUCE · SCANLINE
+        ====================================================== */
+
+        .linea-luce {
+
+            position: fixed;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 1px;
+
+            background: linear-gradient(
+                90deg,
+                transparent,
+                var(--oro-bisanzio),
+                var(--rosso-pompei),
+                transparent
+            );
+
+            opacity: .18;
+
+            pointer-events: none;
+
+            z-index: 9000;
+
+            animation: luce-scende 12s linear infinite;
+
+        }
+
+
+        /* =====================================================
+           FREGIO · RENAISSANCE FRIEZE BAND
+        ====================================================== */
+
+        .fregio {
+
+            height: 20px;
+
+            width: 100%;
+
+            background:
+
+                /* losanghe — diamonds, cosmatesque */
+                linear-gradient(45deg,
+                    var(--rosso-pompei) 25%, transparent 25%) 0 0 / 20px 20px,
+
+                linear-gradient(-45deg,
+                    var(--rosso-pompei) 25%, transparent 25%) 0 0 / 20px 20px,
+
+                linear-gradient(135deg,
+                    var(--verde-verona) 25%, transparent 25%) 10px 10px / 20px 20px,
+
+                linear-gradient(-135deg,
+                    var(--verde-verona) 25%, transparent 25%) 10px 10px / 20px 20px,
+
+                var(--oro-bisanzio);
+
+            opacity: .92;
+
+        }
+
+
+        .fregio-sottile {
+
+            height: 8px;
+
+            width: 100%;
+
+            /* greca — Greek key, Roman meander */
+            background:
+
+                repeating-linear-gradient(
+                    90deg,
+                    transparent 0 4px,
+                    var(--oro-bisanzio) 4px 6px,
+                    transparent 6px 10px,
+                    var(--marmo) 10px 12px,
+                    transparent 12px 18px,
+                    var(--oro-bisanzio) 18px 20px,
+                    transparent 20px 26px
+                );
+
+            opacity: .55;
+
+        }
+
+
+        /* =====================================================
+           NAVIGAZIONE · NAV
         ====================================================== */
 
         nav {
 
             position: fixed;
 
-            top: 18px;
-            left: 50%;
+            top: 0;
+            left: 0;
 
-            transform:
-                translateX(-50%);
+            width: 100%;
 
-            width:
-                min(
-                    calc(100% - 32px),
-                    1120px
-                );
+            z-index: 1000;
+
+            background: rgba(10,12,16,.88);
+
+            border-bottom: 1px solid var(--filo);
+
+            backdrop-filter: blur(20px);
+
+            -webkit-backdrop-filter: blur(20px);
+
+            padding: 0 clamp(16px, 4vw, 60px);
 
             display: flex;
 
@@ -342,2200 +443,2195 @@
 
             justify-content: space-between;
 
-            padding:
-                10px 16px 10px 14px;
-
-            background:
-                rgba(10,10,16,.72);
-
-            border:
-                1px solid
-                rgba(255,255,255,.10);
-
-            backdrop-filter:
-                blur(22px);
-
-            -webkit-backdrop-filter:
-                blur(22px);
-
-            border-radius:
-                999px;
-
-            z-index: 1000;
-
-            box-shadow:
-                0 20px 60px
-                rgba(0,0,0,.35);
+            height: 68px;
 
         }
 
 
-        .nav-brand {
+        nav::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            bottom: -5px;
+
+            width: 100%;
+            height: 5px;
+
+            background:
+
+                repeating-linear-gradient(
+                    90deg,
+                    var(--rosso-pompei) 0 8px,
+                    transparent 8px 12px,
+                    var(--oro-bisanzio) 12px 20px,
+                    transparent 20px 24px,
+                    var(--verde-verona) 24px 34px,
+                    transparent 34px 38px
+                );
+
+            opacity: .72;
+
+        }
+
+
+        .insegna {
 
             display: flex;
 
             align-items: center;
 
-            gap: 10px;
+            gap: 12px;
 
-            font-weight: 700;
+            font-family: "Bodoni Moda", serif;
 
-            letter-spacing:
-                -.02em;
+            font-weight: 900;
 
-        }
-
-
-        .nav-logo {
-
-            width: 34px;
-            height: 34px;
-
-            object-fit: contain;
-
-            display: block;
-
-            filter:
-                drop-shadow(
-                    0 0 10px
-                    rgba(0,229,255,.25)
-                );
-
-            transition:
-                transform .25s ease,
-                filter .25s ease;
-
-        }
-
-
-        .nav-brand:hover
-        .nav-logo {
-
-            transform:
-                scale(1.08);
-
-            filter:
-                drop-shadow(
-                    0 0 16px
-                    rgba(0,229,255,.45)
-                );
-
-        }
-
-
-        .nav-links {
-
-            display: flex;
-
-            gap: 26px;
-
-            font-family:
-                "DM Mono",
-                monospace;
-
-            font-size: 11px;
+            font-size: 15px;
 
             letter-spacing: .08em;
 
+            color: var(--marmo);
+
+            text-decoration: none;
+
+        }
+
+
+        .insegna-logo {
+
+            width: 32px;
+            height: 32px;
+
+            object-fit: contain;
+
+            filter: brightness(1.15) contrast(1.1);
+
+        }
+
+
+        .collegamenti {
+
+            display: flex;
+
+            gap: 28px;
+
+            align-items: center;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 13px;
+
+            font-weight: 500;
+
+            letter-spacing: .06em;
+
+        }
+
+
+        .collegamenti a {
+
+            color: var(--cenere);
+
+            text-decoration: none;
+
+            transition: color .2s ease;
+
+            position: relative;
+
+        }
+
+
+        .collegamenti a::before {
+
+            content: "";
+
+            position: absolute;
+
+            bottom: -5px;
+            left: 0;
+
+            width: 0;
+            height: 1px;
+
+            background: var(--oro-bisanzio);
+
+            transition: width .3s ease;
+
+        }
+
+
+        .collegamenti a:hover {
+            color: var(--marmo);
+        }
+
+
+        .collegamenti a:hover::before {
+            width: 100%;
+        }
+
+
+        /* SELEZIONE LINGUA · LANGUAGE SWITCH */
+
+        .lingua {
+
+            position: relative;
+
+            display: inline-block;
+
+        }
+
+
+        .lingua-input {
+
+            position: absolute;
+
+            opacity: 0;
+
+            width: 0;
+            height: 0;
+
+        }
+
+
+        .lingua-bottone {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            cursor: pointer;
+
+            padding: 8px 14px;
+
+            border: 1px solid var(--filo);
+
+            background: transparent;
+
+            font-family: "Manrope", "DM Mono", monospace;
+
+            font-size: 11px;
+
+            letter-spacing: .12em;
+
+            color: var(--marmo);
+
+            transition: all .2s ease;
+
+            user-select: none;
+
+        }
+
+
+        .lingua-bottone:hover {
+
+            background: var(--oro-bisanzio);
+
+            color: var(--notte);
+
+            border-color: var(--oro-bisanzio);
+
+        }
+
+
+        .lingua-elenco {
+
+            position: absolute;
+
+            top: calc(100% + 8px);
+
+            right: 0;
+
+            min-width: 180px;
+
+            background: var(--notte-2);
+
+            border: 1px solid var(--filo);
+
+            padding: 0;
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            transform: translateY(-4px);
+
+            transition: all .2s ease;
+
+            z-index: 1001;
+
+            max-height: 460px;
+
+            overflow-y: auto;
+
+        }
+
+
+        .lingua-voce {
+
+            display: block;
+
+            padding: 10px 16px;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 12px;
+
+            letter-spacing: .04em;
+
+            color: var(--cenere);
+
+            text-decoration: none;
+
+            transition: all .2s ease;
+
+            border-bottom: 1px solid rgba(240,232,216,.06);
+
+        }
+
+
+        .lingua-voce:hover {
+
+            background: var(--notte-3);
+
+            color: var(--oro-bisanzio);
+
+        }
+
+
+        .lingua-voce.attiva {
+
+            color: var(--notte);
+
+            background: var(--oro-bisanzio);
+
+        }
+
+
+        .lingua-input:checked ~ .lingua-elenco,
+        .lingua:focus-within .lingua-elenco {
+
+            opacity: 1;
+
+            visibility: visible;
+
+            transform: translateY(0);
+
+        }
+
+
+        /* =====================================================
+           PRIMO ATTO · HERO
+        ====================================================== */
+
+        .proemio {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 120px 0 70px;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .proemio-fila {
+
+            display: grid;
+
+            grid-template-columns: 1.05fr 1fr;
+
+            gap: 60px;
+
+            align-items: center;
+
+            width: 100%;
+
+        }
+
+
+        .proemio-voce {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .proemio-etichetta {
+
+            font-family: "DM Mono", monospace;
+
+            font-size: 11px;
+
+            letter-spacing: .28em;
+
+            color: var(--oro-bisanzio);
+
+            margin-bottom: 24px;
+
+            display: inline-block;
+
+            border: 1px solid var(--oro-bisanzio);
+
+            padding: 8px 20px;
+
+            background: rgba(201,162,39,.06);
+
             text-transform: uppercase;
 
-            color: var(--muted);
+        }
+
+
+        .proemio-epigrafe {
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-style: italic;
+
+            font-size: 20px;
+
+            line-height: 1.65;
+
+            color: var(--marmo-2);
+
+            margin-bottom: 32px;
+
+            padding-left: 24px;
+
+            border-left: 3px solid var(--rosso-pompei);
 
         }
 
 
-        .nav-links a {
+        .proemio-epigrafe .firma {
 
-            transition:
-                color .25s ease,
-                transform .25s ease;
+            display: block;
+
+            font-family: "Manrope", sans-serif;
+
+            font-style: normal;
+
+            font-size: 13px;
+
+            letter-spacing: .08em;
+
+            color: var(--cenere);
+
+            margin-top: 12px;
 
         }
 
 
-        .nav-links a:hover {
+        .proemio-voce h1 {
 
-            color: white;
+            font-family: "Bodoni Moda", serif;
 
-            transform:
-                translateY(-1px);
+            font-weight: 900;
 
+            font-size: clamp(3rem, 11vw, 9.2rem);
+
+            line-height: .94;
+
+            letter-spacing: -.02em;
+
+            position: relative;
+
+        }
+
+
+        .proemio-voce h1 .parola {
+
+            display: block;
+
+            position: relative;
+
+        }
+
+
+        .proemio-voce h1 .parola-1 {
+
+            color: var(--marmo);
+
+            text-shadow:
+
+                5px 0 0 var(--rosso-pompei),
+
+                -4px 0 0 var(--verde-verona);
+
+            animation: grottesca-clip 7s infinite;
+
+        }
+
+
+        .proemio-voce h1 .parola-2 {
+
+            color: transparent;
+
+            -webkit-text-stroke: 2px var(--oro-bisanzio);
+
+            font-style: italic;
+
+            transform: translateX(24px);
+
+            animation: grottesca-moto 9s infinite;
+
+        }
+
+
+        .proemio-voce h1 .parola-3 {
+
+            color: var(--notte);
+
+            background: var(--oro-bisanzio);
+
+            padding: 0 22px;
+
+            display: inline-block;
+
+            transform: skewX(-6deg);
+
+            animation: fiamma 5s infinite;
+
+            font-style: italic;
+
+        }
+
+
+        .proemio-voce p {
+
+            margin-top: 42px;
+
+            max-width: 640px;
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 18px;
+
+            line-height: 1.95;
+
+            color: var(--cenere);
+
+            border-left: 3px solid var(--oro-bisanzio);
+
+            padding-left: 24px;
+
+        }
+
+
+        .proemio-voce p strong {
+
+            color: var(--marmo);
+
+            font-weight: 700;
+
+            border-bottom: 2px solid var(--oro-bisanzio);
+
+        }
+
+
+        .proemio-azioni {
+
+            display: flex;
+
+            gap: 16px;
+
+            margin-top: 44px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .bottone {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 14px 30px;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            letter-spacing: .16em;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+            border: 1px solid var(--filo);
+
+            background: transparent;
+
+            color: var(--marmo);
+
+            transition: all .25s ease;
+
+            position: relative;
+
+            overflow: hidden;
+
+            z-index: 1;
+
+        }
+
+
+        .bottone::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: -100%;
+
+            width: 100%;
+            height: 100%;
+
+            background: var(--rosso-pompei);
+
+            transition: left .25s ease;
+
+            z-index: -1;
+
+        }
+
+
+        .bottone:hover::before {
+            left: 0;
+        }
+
+
+        .bottone:hover {
+
+            color: var(--marmo);
+
+            border-color: var(--rosso-pompei);
+
+        }
+
+
+        .bottone-primo {
+
+            background: var(--rosso-pompei);
+
+            color: var(--marmo);
+
+            border-color: var(--rosso-pompei);
+
+        }
+
+
+        .bottone-primo::before {
+            background: var(--oro-bisanzio);
+        }
+
+
+        .bottone-primo:hover {
+            color: var(--notte);
+            border-color: var(--oro-bisanzio);
         }
 
 
         /* =====================================================
-           CONTAINER
+           TONDO · RENAISSANCE ROUND (hero visual)
         ====================================================== */
 
-        .container {
+        .proemio-tondo {
 
-            width:
-                min(
-                    calc(100% - 40px),
-                    var(--max-width)
-                );
+            position: relative;
 
-            margin:
-                auto;
+            min-height: 660px;
 
-        }
+            display: flex;
 
+            align-items: center;
 
-        /* =====================================================
-           HERO
-        ====================================================== */
-
-        .hero {
-
-            min-height:
-                100vh;
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            position:
-                relative;
-
-            padding:
-                140px 0
-                90px;
+            justify-content: center;
 
         }
 
 
-        .hero-grid {
+        .tondo-cornice {
 
-            display:
-                grid;
+            position: relative;
 
-            grid-template-columns:
-                minmax(0, 1.15fr)
-                minmax(320px, .85fr);
+            width: min(100%, 540px);
 
-            gap:
-                70px;
+            aspect-ratio: 1;
 
-            align-items:
-                center;
+            border-radius: 50%;
 
-        }
+            background: var(--notte-2);
 
+            border: 4px solid var(--marmo-2);
 
-        .eyebrow {
-
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            gap:
-                10px;
-
-            font-family:
-                "DM Mono",
-                monospace;
-
-            font-size:
-                11px;
-
-            letter-spacing:
-                .16em;
-
-            text-transform:
-                uppercase;
-
-            color:
-                var(--muted);
-
-            margin-bottom:
-                26px;
-
-        }
-
-
-        .eyebrow::before {
-
-            content: "";
-
-            width:
-                28px;
-
-            height:
-                1px;
-
-            background:
-
-                linear-gradient(
-                    90deg,
-                    var(--cyan),
-                    var(--pink)
-                );
-
-        }
-
-
-        .hero h1 {
-
-            margin: 0;
-
-            font-size:
-                clamp(4rem, 9vw, 8.5rem);
-
-            line-height:
-                .82;
-
-            letter-spacing:
-                -.085em;
-
-            font-weight:
-                800;
-
-        }
-
-
-        .hero h1 span {
-
-            display:
-                block;
-
-        }
-
-
-        .hero h1 .gradient {
-
-            background:
-
-                linear-gradient(
-                    100deg,
-                    var(--cyan),
-                    #7c7cff 35%,
-                    var(--pink) 70%,
-                    var(--orange)
-                );
-
-            background-size:
-                250% auto;
-
-            -webkit-background-clip:
-                text;
-
-            background-clip:
-                text;
-
-            color:
-                transparent;
-
-            animation:
-                gradientMove 8s ease infinite;
-
-        }
-
-
-        @keyframes gradientMove {
-
-            0%, 100% {
-                background-position:
-                    0% 50%;
-            }
-
-            50% {
-                background-position:
-                    100% 50%;
-            }
-
-        }
-
-
-        .hero-copy {
-
-            max-width:
-                650px;
-
-            margin-top:
-                36px;
-
-            color:
-                var(--muted);
-
-            font-size:
-                clamp(1rem, 1.6vw, 1.25rem);
-
-            line-height:
-                1.75;
-
-            font-weight:
-                300;
-
-        }
-
-
-        .hero-copy strong {
-
-            color:
-                white;
-
-            font-weight:
-                500;
-
-        }
-
-
-        .hero-actions {
-
-            display:
-                flex;
-
-            gap:
-                14px;
-
-            margin-top:
-                36px;
-
-            flex-wrap:
-                wrap;
-
-        }
-
-
-        .button {
-
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            min-height:
-                48px;
-
-            padding:
-                0 22px;
-
-            border-radius:
-                999px;
-
-            border:
-                1px solid
-                rgba(255,255,255,.14);
-
-            font-size:
-                13px;
-
-            font-weight:
-                600;
-
-            transition:
-                transform .25s ease,
-                border-color .25s ease,
-                background .25s ease;
-
-        }
-
-
-        .button:hover {
-
-            transform:
-                translateY(-3px);
-
-            border-color:
-                rgba(255,255,255,.35);
-
-        }
-
-
-        .button.primary {
-
-            color:
-                #050507;
-
-            background:
-
-                linear-gradient(
-                    100deg,
-                    var(--cyan),
-                    #8b7cff,
-                    var(--pink)
-                );
-
-            border:
-                none;
-
-        }
-
-
-        .button.secondary {
-
-            background:
-                rgba(255,255,255,.04);
-
-        }
-
-
-        /* =====================================================
-           HERO LOGO
-        ====================================================== */
-
-        .hero-art {
-
-            min-height:
-                520px;
-
-            position:
-                relative;
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-        }
-
-
-        .hero-logo-wrapper {
-
-            position:
-                relative;
-
-            width:
-                min(
-                    460px,
-                    78vw
-                );
-
-            aspect-ratio:
-                1;
-
-            display:
-                grid;
-
-            place-items:
-                center;
-
-        }
-
-
-        .hero-logo-wrapper::before {
-
-            content: "";
-
-            position:
-                absolute;
-
-            width:
-                78%;
-
-            height:
-                78%;
-
-            border-radius:
-                50%;
-
-            background:
-
-                radial-gradient(
-                    circle,
-                    rgba(0,229,255,.18),
-                    rgba(139,92,246,.10) 40%,
-                    transparent 70%
-                );
-
-            filter:
-                blur(35px);
-
-            animation:
-                logoGlow 7s ease-in-out infinite;
-
-        }
-
-
-        .hero-logo-wrapper::after {
-
-            content: "";
-
-            position:
-                absolute;
-
-            inset:
-                8%;
-
-            border:
-                1px solid
-                rgba(255,255,255,.10);
-
-            border-radius:
-                50%;
-
-            transform:
-                rotate(-15deg)
-                scaleY(.42);
+            padding: 26px;
 
             box-shadow:
 
-                0 0 40px
-                rgba(0,229,255,.08),
+                0 0 0 8px var(--notte),
 
-                inset 0 0 30px
-                rgba(255,255,255,.025);
+                0 0 0 10px var(--oro-bisanzio),
 
-            animation:
-                logoOrbit 12s linear infinite;
+                0 0 0 13px var(--notte),
+
+                0 0 0 14px var(--rosso-pompei),
+
+                0 40px 120px rgba(168,32,26,.22);
+
+            overflow: hidden;
 
         }
 
 
-        .hero-logo {
+        .tondo-cornice::before {
 
-            position:
-                relative;
+            content: "";
 
-            z-index:
-                3;
+            position: absolute;
 
-            width:
-                72%;
+            inset: 12px;
 
-            height:
-                72%;
+            border: 2px dashed var(--oro-bisanzio);
 
-            object-fit:
-                contain;
+            border-radius: 50%;
 
-            display:
-                block;
+            pointer-events: none;
+
+            z-index: 6;
+
+            opacity: .75;
+
+        }
+
+
+        .tondo-cornice::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 22px;
+
+            border: 1px solid rgba(168,32,26,.55);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            z-index: 6;
+
+        }
+
+
+        /* cosmatesco interno — stone inlay pattern */
+
+        .cosmatesco {
+
+            position: absolute;
+
+            inset: 30px;
+
+            border-radius: 50%;
+
+            background:
+
+                /* triangoli — porphyry / serpentine */
+                conic-gradient(
+                    from 0deg,
+                    var(--rosso-pompei) 0deg 90deg,
+                    var(--verde-verona) 90deg 180deg,
+                    var(--notte-3) 180deg 270deg,
+                    var(--verde-verona) 270deg 360deg
+                ),
+
+                radial-gradient(
+                    circle at center,
+                    rgba(201,162,39,.18) 0%,
+                    transparent 55%
+                ),
+
+                var(--notte-3);
+
+            background-size:
+                42px 42px,
+                100% 100%,
+                100% 100%;
+
+            opacity: .55;
+
+            animation: cosmatesco-scivola 80s linear infinite;
+
+            z-index: 1;
+
+        }
+
+
+        /* ornamenti concentrici — concentric ornament */
+
+        .ornamenti {
+
+            position: absolute;
+
+            inset: 30px;
+
+            display: grid;
+
+            place-items: center;
+
+            z-index: 3;
+
+            pointer-events: none;
+
+            border-radius: 50%;
+
+        }
+
+
+        .anello {
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            border: 1px solid;
+
+        }
+
+
+        .anello-1 {
+
+            width: 88%;
+            height: 88%;
+
+            border-color: rgba(201,162,39,.65);
+
+            border-style: dashed;
+
+            animation: ruota-oraria 90s linear infinite;
+
+        }
+
+
+        .anello-2 {
+
+            width: 68%;
+            height: 68%;
+
+            border-color: rgba(168,32,26,.65);
+
+            animation: ruota-antioraria 65s linear infinite;
+
+        }
+
+
+        .anello-3 {
+
+            width: 48%;
+            height: 48%;
+
+            border-color: rgba(58,90,69,.90);
+
+            border-style: dotted;
+
+            border-width: 2px;
+
+            animation: ruota-oraria 45s linear infinite;
+
+        }
+
+
+        .anello-4 {
+
+            width: 26%;
+            height: 26%;
+
+            border-color: rgba(201,162,39,.85);
+
+            animation: ruota-antioraria 30s linear infinite;
+
+        }
+
+
+        /* imagine centrale — DHA neon al centro del tondo */
+
+        .tondo-centro {
+
+            position: absolute;
+
+            inset: 0;
+
+            display: grid;
+
+            place-items: center;
+
+            z-index: 5;
+
+        }
+
+
+        .tondo-centro img {
+
+            width: 58%;
+
+            max-width: 260px;
+
+            object-fit: contain;
 
             filter:
 
-                drop-shadow(
-                    0 0 25px
-                    rgba(0,229,255,.20)
-                )
+                drop-shadow(0 0 30px rgba(201,162,39,.4))
 
-                drop-shadow(
-                    0 20px 45px
-                    rgba(0,0,0,.45)
-                );
+                drop-shadow(0 20px 45px rgba(0,0,0,.5));
 
-            animation:
-                logoFloat 7s ease-in-out infinite;
-
-            transition:
-                transform .5s ease,
-                filter .5s ease;
+            animation: fiamma 7s infinite;
 
         }
 
 
-        .hero-logo-wrapper:hover
-        .hero-logo {
+        .tondo-firma {
 
-            transform:
-                scale(1.045);
+            position: absolute;
 
-            filter:
+            bottom: -46px;
+            left: 50%;
 
-                drop-shadow(
-                    0 0 35px
-                    rgba(0,229,255,.35)
-                )
+            transform: translateX(-50%);
 
-                drop-shadow(
-                    0 25px 55px
-                    rgba(0,0,0,.50)
-                );
+            font-family: "DM Mono", monospace;
 
-        }
+            font-size: 10px;
 
+            letter-spacing: .32em;
 
-        @keyframes logoFloat {
+            color: var(--cenere);
 
-            0%, 100% {
+            text-transform: uppercase;
 
-                transform:
-                    translateY(0)
-                    rotate(0deg);
+            white-space: nowrap;
 
-            }
-
-            50% {
-
-                transform:
-                    translateY(-12px)
-                    rotate(1deg);
-
-            }
-
-        }
-
-
-        @keyframes logoGlow {
-
-            0%, 100% {
-
-                transform:
-                    scale(.92);
-
-                opacity:
-                    .65;
-
-            }
-
-            50% {
-
-                transform:
-                    scale(1.06);
-
-                opacity:
-                    1;
-
-            }
-
-        }
-
-
-        @keyframes logoOrbit {
-
-            0% {
-
-                transform:
-                    rotate(-15deg)
-                    scaleY(.42);
-
-            }
-
-            50% {
-
-                transform:
-                    rotate(15deg)
-                    scaleY(.42);
-
-            }
-
-            100% {
-
-                transform:
-                    rotate(-15deg)
-                    scaleY(.42);
-
-            }
+            z-index: 7;
 
         }
 
 
         /* =====================================================
-           MARQUEE
+           FREGIO SCORREVOLE · MARQUEE
         ====================================================== */
 
-        .marquee {
+        .sfilata {
 
-            overflow:
-                hidden;
+            border-top: 1px solid var(--filo);
 
-            border-top:
-                1px solid
-                var(--line);
+            border-bottom: 1px solid var(--filo);
 
-            border-bottom:
-                1px solid
-                var(--line);
+            padding: 22px 0;
 
-            padding:
-                16px 0;
+            overflow: hidden;
 
-            color:
-                rgba(255,255,255,.45);
+            background: var(--notte-2);
 
-            font-family:
-                "DM Mono",
-                monospace;
-
-            font-size:
-                12px;
-
-            letter-spacing:
-                .14em;
-
-            text-transform:
-                uppercase;
-
-            white-space:
-                nowrap;
+            position: relative;
 
         }
 
 
-        .marquee-track {
+        .sfilata::before {
 
-            display:
-                inline-flex;
+            content: "";
 
-            gap:
-                50px;
+            position: absolute;
 
-            animation:
-                marquee 28s linear infinite;
+            top: 0;
+            left: 0;
 
-        }
+            width: 100%;
+            height: 100%;
 
+            background:
 
-        .marquee-track
-        span:nth-child(4n+1) {
+                repeating-linear-gradient(
+                    90deg,
+                    transparent 0px,
+                    transparent 62px,
+                    rgba(201,162,39,.05) 63px,
+                    transparent 64px
+                );
 
-            color:
-                var(--cyan);
+            pointer-events: none;
 
-        }
-
-
-        .marquee-track
-        span:nth-child(4n+2) {
-
-            color:
-                var(--violet);
+            z-index: 1;
 
         }
 
 
-        .marquee-track
-        span:nth-child(4n+3) {
+        .sfilata-fila {
 
-            color:
-                var(--pink);
+            display: inline-flex;
+
+            gap: 46px;
+
+            animation: marquee 30s linear infinite;
+
+            font-family: "Bodoni Moda", serif;
+
+            font-weight: 500;
+
+            font-size: 15px;
+
+            letter-spacing: .22em;
+
+            text-transform: uppercase;
+
+            white-space: nowrap;
+
+        }
+
+
+        .sfilata-fila span {
+
+            color: var(--cenere);
+
+            position: relative;
+
+        }
+
+
+        .sfilata-fila span::before {
+
+            content: "❧";
+
+            color: var(--oro-bisanzio);
+
+            margin-right: 10px;
+
+            font-size: 14px;
+
+            vertical-align: middle;
+
+        }
+
+
+        .sfilata-fila span::after {
+
+            content: "❧";
+
+            color: var(--oro-bisanzio);
+
+            margin-left: 10px;
+
+            font-size: 14px;
+
+            vertical-align: middle;
 
         }
 
 
         @keyframes marquee {
 
-            to {
-
-                transform:
-                    translateX(-50%);
-
-            }
+            to { transform: translateX(-50%); }
 
         }
 
 
         /* =====================================================
-           SECTION
+           SEZIONI · SEZIONI
         ====================================================== */
 
         section {
 
-            padding:
-                130px 0;
+            padding: 140px 0;
+
+            position: relative;
+
+            border-bottom: 1px solid var(--filo-tenue);
 
         }
 
 
-        .section-label {
+        .calice {
 
-            font-family:
-                "DM Mono",
-                monospace;
+            width: min(calc(100% - 40px), var(--larghezza));
 
-            color:
-                var(--muted);
+            margin: auto;
 
-            font-size:
-                11px;
-
-            letter-spacing:
-                .14em;
-
-            text-transform:
-                uppercase;
-
-            margin-bottom:
-                22px;
+            position: relative;
 
         }
 
 
-        .section-title {
+        .sezione-etichetta {
 
-            margin:
-                0;
+            font-family: "DM Mono", monospace;
 
-            max-width:
-                900px;
+            font-size: 11px;
 
-            font-size:
-                clamp(2.7rem, 6vw, 5.8rem);
+            font-weight: 500;
 
-            line-height:
-                .95;
+            letter-spacing: .28em;
 
-            letter-spacing:
-                -.065em;
+            color: var(--oro-bisanzio);
 
-        }
+            margin-bottom: 34px;
 
+            display: inline-block;
 
-        .section-title .gradient {
+            border-bottom: 2px solid var(--rosso-pompei);
 
-            background:
+            padding-bottom: 8px;
 
-                linear-gradient(
-                    100deg,
-                    var(--cyan),
-                    var(--violet),
-                    var(--pink)
-                );
-
-            -webkit-background-clip:
-                text;
-
-            background-clip:
-                text;
-
-            color:
-                transparent;
+            text-transform: uppercase;
 
         }
 
 
-        .section-intro {
+        .sezione-titolo {
 
-            max-width:
-                700px;
+            font-family: "Bodoni Moda", serif;
 
-            margin-top:
-                30px;
+            font-size: clamp(2.2rem, 5.8vw, 5.8rem);
 
-            color:
-                var(--muted);
+            line-height: 1.06;
 
-            line-height:
-                1.8;
+            font-weight: 900;
 
-            font-size:
-                1.05rem;
+            margin-bottom: 36px;
+
+            letter-spacing: -.02em;
 
         }
 
 
-        /* =====================================================
-           DOMAIN CARDS
-        ====================================================== */
+        .sezione-titolo .ombra {
 
-        .domains {
+            color: transparent;
 
-            display:
-                grid;
+            -webkit-text-stroke: 1.5px var(--oro-bisanzio);
 
-            grid-template-columns:
-                repeat(4, 1fr);
-
-            gap:
-                14px;
-
-            margin-top:
-                60px;
+            font-style: italic;
 
         }
 
 
-        .domain {
+        .sezione-titolo .sbarrato {
 
-            min-height:
-                320px;
+            text-decoration: line-through;
 
-            padding:
-                28px;
+            text-decoration-color: var(--rosso-pompei);
 
-            border:
-                1px solid
-                var(--line);
-
-            border-radius:
-                var(--radius);
-
-            background:
-
-                linear-gradient(
-                    145deg,
-                    rgba(255,255,255,.07),
-                    rgba(255,255,255,.025)
-                );
-
-            position:
-                relative;
-
-            overflow:
-                hidden;
-
-            transition:
-                transform .35s ease,
-                border-color .35s ease;
+            text-decoration-thickness: 4px;
 
         }
 
 
-        .domain:hover {
+        .sezione-proemio {
 
-            transform:
-                translateY(-10px)
-                rotate(-.5deg);
+            font-family: "Cormorant Garamond", serif;
 
-            border-color:
-                rgba(255,255,255,.28);
+            font-size: 18px;
 
-        }
+            line-height: 1.95;
 
+            color: var(--cenere);
 
-        .domain::before {
+            max-width: 740px;
 
-            content:
-                "";
+            margin-bottom: 66px;
 
-            position:
-                absolute;
+            border-left: 3px solid var(--oro-bisanzio);
 
-            width:
-                180px;
-
-            height:
-                180px;
-
-            border-radius:
-                50%;
-
-            top:
-                -80px;
-
-            right:
-                -70px;
-
-            filter:
-                blur(35px);
-
-            opacity:
-                .35;
-
-        }
-
-
-        .domain.art::before {
-            background:
-                var(--pink);
-        }
-
-
-        .domain.data::before {
-            background:
-                var(--cyan);
-        }
-
-
-        .domain.ai::before {
-            background:
-                var(--violet);
-        }
-
-
-        .domain.chain::before {
-            background:
-                var(--orange);
-        }
-
-
-        .domain-number {
-
-            font-family:
-                "DM Mono",
-                monospace;
-
-            font-size:
-                11px;
-
-            color:
-                var(--muted);
-
-        }
-
-
-        .domain-symbol {
-
-            font-size:
-                42px;
-
-            margin:
-                40px 0 25px;
-
-        }
-
-
-        .domain h3 {
-
-            margin:
-                0 0 12px;
-
-            font-size:
-                23px;
-
-        }
-
-
-        .domain p {
-
-            color:
-                var(--muted);
-
-            font-size:
-                14px;
-
-            line-height:
-                1.7;
+            padding-left: 24px;
 
         }
 
 
         /* =====================================================
-           ABOUT
+           LE DISCIPLINE · DOMAINS
         ====================================================== */
 
-        .about-grid {
+        .discipline {
 
-            display:
-                grid;
+            display: grid;
 
-            grid-template-columns:
-                .8fr 1.2fr;
+            grid-template-columns: repeat(4, 1fr);
 
-            gap:
-                80px;
+            gap: 0;
 
-            align-items:
-                center;
+            border: 1px solid var(--filo);
 
         }
 
 
-        .about-visual {
+        .disciplina {
 
-            min-height:
-                520px;
+            padding: 46px 32px;
 
-            border-radius:
-                40px;
+            min-height: 340px;
 
-            position:
-                relative;
+            position: relative;
 
-            overflow:
-                hidden;
+            border-right: 1px solid var(--filo);
+
+            border-bottom: 1px solid var(--filo);
+
+            background: var(--notte);
+
+            transition: all .3s ease;
+
+            cursor: crosshair;
+
+        }
+
+
+        .disciplina:nth-child(4n) {
+            border-right: none;
+        }
+
+
+        .disciplina:nth-last-child(-n+4) {
+            border-bottom: none;
+        }
+
+
+        .disciplina:hover {
+
+            background: var(--notte-2);
+
+            transform: translateY(-4px);
+
+            border-color: var(--oro-bisanzio);
+
+        }
+
+
+        .disciplina::before {
+
+            content: attr(data-numero);
+
+            position: absolute;
+
+            top: 24px;
+            right: 28px;
+
+            font-family: "Bodoni Moda", serif;
+
+            font-style: italic;
+
+            font-weight: 700;
+
+            font-size: 22px;
+
+            color: var(--oro-bisanzio);
+
+            opacity: .85;
+
+        }
+
+
+        .disciplina-simbolo {
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 54px;
+
+            margin-bottom: 32px;
+
+            color: var(--oro-bisanzio);
+
+            opacity: .9;
+
+            animation: fiamma 6s infinite;
+
+            line-height: 1;
+
+        }
+
+
+        .disciplina h3 {
+
+            font-family: "Bodoni Moda", serif;
+
+            font-size: 20px;
+
+            font-weight: 700;
+
+            letter-spacing: .04em;
+
+            margin-bottom: 18px;
+
+            color: var(--marmo);
+
+            font-style: italic;
+
+        }
+
+
+        .disciplina p {
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            color: var(--cenere);
+
+        }
+
+
+        /* =====================================================
+           BOTTEGA · ABOUT
+        ====================================================== */
+
+        .bottega-fila {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .bottega-immagine {
+
+            min-height: 540px;
+
+            position: relative;
+
+            background: var(--notte-2);
+
+            border: 1px solid var(--filo);
+
+            overflow: hidden;
+
+        }
+
+
+        .bottega-immagine::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
 
             background:
 
                 radial-gradient(
                     circle at 30% 30%,
-                    var(--pink),
-                    transparent 22%
+                    rgba(168,32,26,.32),
+                    transparent 45%
                 ),
 
                 radial-gradient(
-                    circle at 70% 60%,
-                    var(--cyan),
-                    transparent 25%
+                    circle at 75% 65%,
+                    rgba(74,123,184,.40),
+                    transparent 45%
                 ),
 
                 radial-gradient(
-                    circle at 45% 80%,
-                    var(--violet),
-                    transparent 28%
-                ),
-
-                #11111a;
-
-        }
-
-
-        .about-visual::before {
-
-            content:
-                "DHA";
-
-            position:
-                absolute;
-
-            inset:
-                0;
-
-            display:
-                grid;
-
-            place-items:
-                center;
-
-            font-size:
-                clamp(
-                    7rem,
-                    18vw,
-                    15rem
+                    circle at 50% 92%,
+                    rgba(201,162,39,.24),
+                    transparent 50%
                 );
 
-            font-weight:
-                800;
+            filter: blur(36px);
 
-            letter-spacing:
-                -.1em;
+            animation: fiamma 14s ease-in-out infinite;
 
-            color:
-                rgba(255,255,255,.05);
-
-            transform:
-                rotate(-10deg);
+            z-index: 1;
 
         }
 
 
-        .about-visual::after {
+        .bottega-immagine img {
 
-            content:
-                "";
+            position: relative;
 
-            position:
-                absolute;
+            width: 100%;
+            height: 100%;
 
-            width:
-                280px;
+            object-fit: contain;
 
-            height:
-                280px;
+            padding: 40px;
 
-            border:
-                1px solid
-                rgba(255,255,255,.25);
+            opacity: .92;
 
-            border-radius:
-                50%;
-
-            top:
-                50%;
-
-            left:
-                50%;
-
-            transform:
-                translate(-50%,-50%)
-                rotate(25deg)
-                scaleY(.38);
+            z-index: 2;
 
         }
 
 
-        .about-text h2 {
+        .bottega-testo h2 {
 
-            font-size:
-                clamp(
-                    2.5rem,
-                    5vw,
-                    5rem
-                );
+            font-family: "Bodoni Moda", serif;
 
-            line-height:
-                .95;
+            font-size: clamp(2rem, 4.8vw, 4.8rem);
 
-            letter-spacing:
-                -.06em;
+            line-height: 1.12;
 
-            margin:
-                0;
+            font-weight: 900;
+
+            margin-bottom: 26px;
+
+            letter-spacing: -.02em;
 
         }
 
 
-        .about-text p {
+        .bottega-testo h2 .sottolineato {
 
-            color:
-                var(--muted);
+            background: var(--rosso-pompei);
 
-            font-size:
-                1.05rem;
+            color: var(--marmo);
 
-            line-height:
-                1.85;
+            padding: 0 16px;
 
-            margin-top:
-                28px;
+            display: inline-block;
+
+            transform: skewX(-4deg);
+
+        }
+
+
+        .bottega-testo p {
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 17px;
+
+            line-height: 2;
+
+            color: var(--cenere);
+
+            margin-bottom: 24px;
+
+        }
+
+
+        .bottega-testo p strong {
+
+            color: var(--oro-bisanzio);
+
+            font-weight: 700;
 
         }
 
 
         /* =====================================================
-           PROJECT / DHA VISION
+           OPERE · PROJECTS
         ====================================================== */
 
-        .project {
+        .opera {
 
-            margin-top:
-                65px;
+            margin-bottom: 48px;
 
-            display:
-                grid;
+            border: 1px solid var(--filo);
 
-            grid-template-columns:
-                1fr 1fr;
+            background: var(--notte-2);
 
-            min-height:
-                520px;
+            display: grid;
 
-            border:
-                1px solid
-                var(--line);
+            grid-template-columns: 1fr 1fr;
 
-            border-radius:
-                36px;
+            position: relative;
 
-            overflow:
-                hidden;
-
-            background:
-                rgba(255,255,255,.035);
+            transition: all .3s ease;
 
         }
 
 
-        .project-visual {
+        .opera:hover {
 
-            position:
-                relative;
+            border-color: var(--oro-bisanzio);
 
-            min-height:
-                520px;
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            overflow:
-                hidden;
-
-            background:
-
-                radial-gradient(
-                    circle at 30% 30%,
-                    rgba(0,229,255,.20),
-                    transparent 30%
-                ),
-
-                radial-gradient(
-                    circle at 75% 70%,
-                    rgba(255,60,172,.20),
-                    transparent 35%
-                ),
-
-                #0b0b13;
+            transform: translateX(-4px);
 
         }
 
 
-        .project-visual img {
+        .opera-immagine {
 
-            width:
-                100%;
+            min-height: 440px;
 
-            height:
-                100%;
+            position: relative;
 
-            object-fit:
-                cover;
+            overflow: hidden;
 
-            display:
-                block;
-
-            transition:
-                transform .7s ease,
-                filter .7s ease;
+            background: var(--notte);
 
         }
 
 
-        .project-visual::before {
+        .opera-immagine img {
 
-            content:
-                "";
+            width: 100%;
+            height: 100%;
 
-            position:
-                absolute;
+            object-fit: cover;
 
-            inset:
-                0;
+            filter: grayscale(30%) contrast(1.12) brightness(.94);
 
-            background:
-
-                linear-gradient(
-                    135deg,
-                    rgba(0,229,255,.16),
-                    transparent 35%,
-                    rgba(139,92,246,.10) 60%,
-                    rgba(255,60,172,.18)
-                );
-
-            mix-blend-mode:
-                screen;
-
-            z-index:
-                1;
-
-            pointer-events:
-                none;
+            transition: all .6s ease;
 
         }
 
 
-        .project-visual::after {
+        .opera:hover .opera-immagine img {
 
-            content:
-                "";
+            filter: grayscale(0%) contrast(1.08) brightness(1);
 
-            position:
-                absolute;
+            transform: scale(1.05);
 
-            inset:
-                0;
+        }
+
+
+        .opera-immagine::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
 
             background:
 
                 repeating-linear-gradient(
                     0deg,
                     transparent 0px,
-                    transparent 5px,
-                    rgba(255,255,255,.025) 6px
+                    transparent 4px,
+                    rgba(10,12,16,.35) 5px
                 );
 
-            opacity:
-                .35;
+            z-index: 1;
 
-            z-index:
-                2;
-
-            pointer-events:
-                none;
+            pointer-events: none;
 
         }
 
 
-        .project:hover
-        .project-visual img {
+        .opera-testo {
 
-            transform:
-                scale(1.035);
+            padding: clamp(34px, 5vw, 66px);
 
-            filter:
-                saturate(1.08)
-                contrast(1.04);
+            display: flex;
 
-        }
+            flex-direction: column;
 
+            justify-content: center;
 
-        .project-info {
-
-            padding:
-                clamp(
-                    35px,
-                    6vw,
-                    75px
-                );
-
-            display:
-                flex;
-
-            flex-direction:
-                column;
-
-            justify-content:
-                center;
+            position: relative;
 
         }
 
 
-        .project-tag {
+        .opera-etichetta {
 
-            font-family:
-                "DM Mono",
-                monospace;
+            font-family: "DM Mono", monospace;
 
-            font-size:
-                11px;
+            font-size: 11px;
 
-            color:
-                var(--cyan);
+            letter-spacing: .24em;
 
-            text-transform:
-                uppercase;
+            color: var(--oro-bisanzio);
 
-            letter-spacing:
-                .15em;
+            margin-bottom: 24px;
 
-            margin-bottom:
-                20px;
+            display: inline-block;
 
         }
 
 
-        .project-info h3 {
+        .opera-testo h3 {
 
-            margin:
-                0;
+            font-family: "Bodoni Moda", serif;
 
-            font-size:
-                clamp(
-                    2.5rem,
-                    5vw,
-                    4.8rem
-                );
+            font-size: clamp(2rem, 4.2vw, 4.2rem);
 
-            letter-spacing:
-                -.07em;
+            line-height: 1.08;
 
-            line-height:
-                .9;
+            font-weight: 900;
 
-        }
+            margin-bottom: 24px;
 
+            color: var(--marmo);
 
-        .project-info p {
+            letter-spacing: -.02em;
 
-            color:
-                var(--muted);
-
-            line-height:
-                1.8;
-
-            margin:
-                30px 0;
+            font-style: italic;
 
         }
 
 
-        .tech {
+        .opera-testo h3 em {
 
-            display:
-                flex;
+            font-style: normal;
 
-            gap:
-                8px;
-
-            flex-wrap:
-                wrap;
+            color: var(--oro-bisanzio);
 
         }
 
 
-        .tech span {
+        .opera-testo p {
 
-            border:
-                1px solid
-                var(--line);
+            font-family: "Cormorant Garamond", serif;
 
-            padding:
-                7px 11px;
+            font-size: 17px;
 
-            border-radius:
-                999px;
+            line-height: 2;
 
-            color:
-                var(--muted);
+            color: var(--cenere);
 
-            font-family:
-                "DM Mono",
-                monospace;
+            margin-bottom: 28px;
 
-            font-size:
-                10px;
+        }
 
+
+        .tecnologie {
+
+            display: flex;
+
+            gap: 8px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 28px;
+
+        }
+
+
+        .tecnologie span {
+
+            border: 1px solid var(--filo);
+
+            padding: 7px 14px;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: .06em;
+
+            color: var(--marmo-2);
+
+            background: var(--notte);
+
+        }
+
+
+        .opera-collegamenti {
+
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .opera-collegamenti .bottone {
+
+            padding: 13px 22px;
+
+            font-size: 12px;
+
+        }
+
+
+        .opera-sigillo {
+
+            position: absolute;
+
+            bottom: 22px;
+            left: 22px;
+
+            width: 84px;
+            height: 84px;
+
+            object-fit: contain;
+
+            z-index: 3;
+
+            padding: 6px;
+
+            background: rgba(10,12,16,.7);
+
+            border: 1px solid var(--filo);
+
+            backdrop-filter: blur(10px);
+
+            -webkit-backdrop-filter: blur(10px);
+
+            filter: none !important;
+
+            border-radius: 50%;
+
+        }
+
+
+        .opera:hover .opera-sigillo {
+            border-color: var(--oro-bisanzio);
+        }
+
+
+        .opera.ampia .opera-immagine {
+            min-height: 500px;
         }
 
 
         /* =====================================================
-           HANA
+           HANA · ORIGINE
         ====================================================== */
 
-        .hana {
+        .hana-fila {
 
-            position:
-                relative;
+            display: grid;
 
-            overflow:
-                hidden;
+            grid-template-columns: 1fr 1fr;
 
-            padding:
-                100px 0;
+            gap: 70px;
 
-            border-top:
-                1px solid
-                var(--line);
-
-            border-bottom:
-                1px solid
-                var(--line);
+            align-items: center;
 
         }
 
 
-        .hana-grid {
+        .hana-voce h2 {
 
-            display:
-                grid;
+            font-family: "Bodoni Moda", serif;
 
-            grid-template-columns:
-                1fr 1fr;
+            font-size: clamp(2.8rem, 7vw, 7rem);
 
-            gap:
-                80px;
+            line-height: 1.05;
 
-            align-items:
-                center;
+            font-weight: 900;
 
-        }
+            margin-bottom: 26px;
 
-
-        .hana-copy h2 {
-
-            font-size:
-                clamp(
-                    3rem,
-                    7vw,
-                    7rem
-                );
-
-            line-height:
-                .82;
-
-            letter-spacing:
-                -.08em;
-
-            margin:
-                0;
+            letter-spacing: -.02em;
 
         }
 
 
-        .hana-copy h2 span {
+        .hana-voce h2 .parola {
+            display: block;
+        }
 
-            display:
-                block;
+
+        .hana-voce h2 .parola-1 {
+            color: var(--marmo);
+        }
+
+
+        .hana-voce h2 .parola-2 {
+
+            color: transparent;
+
+            -webkit-text-stroke: 3px var(--rosso-pompei);
+
+            font-style: italic;
+
+            transform: translateX(30px);
 
         }
 
 
-        .hana-copy h2
-        .hana-gradient {
+        .hana-voce p {
 
-            background:
+            font-family: "Cormorant Garamond", serif;
 
-                linear-gradient(
-                    100deg,
-                    var(--orange),
-                    var(--pink),
-                    var(--violet)
-                );
+            font-size: 17px;
 
-            -webkit-background-clip:
-                text;
+            line-height: 2;
 
-            background-clip:
-                text;
+            color: var(--cenere);
 
-            color:
-                transparent;
+            margin-bottom: 24px;
 
         }
 
 
-        .hana-copy p {
+        .hana-voce p strong {
+            color: var(--oro-bisanzio);
+        }
 
-            color:
-                var(--muted);
 
-            max-width:
-                550px;
+        .hana-immagine {
 
-            line-height:
-                1.8;
+            min-height: 540px;
 
-            margin-top:
-                30px;
+            position: relative;
+
+            border: 1px solid var(--filo);
+
+            background: var(--notte-2);
+
+            overflow: hidden;
 
         }
 
 
-        .hana-image {
+        .hana-immagine::before {
 
-            min-height:
-                480px;
+            content: "";
 
-            border-radius:
-                40px;
+            position: absolute;
 
-            position:
-                relative;
-
-            overflow:
-                hidden;
-
-            background:
-
-                linear-gradient(
-                    145deg,
-                    #171721,
-                    #0c0c12
-                );
-
-        }
-
-
-        .hana-image::before {
-
-            content:
-                "";
-
-            position:
-                absolute;
-
-            inset:
-                0;
+            inset: 0;
 
             background:
 
                 linear-gradient(
                     135deg,
-                    rgba(0,229,255,.15),
-                    transparent 35%,
-                    rgba(255,60,172,.15)
+                    rgba(201,162,39,.22),
+                    transparent 50%,
+                    rgba(168,32,26,.22)
                 );
 
-            z-index:
-                1;
+            z-index: 1;
 
-            pointer-events:
-                none;
+            mix-blend-mode: screen;
 
         }
 
 
-        .hana-image img {
+        .hana-immagine img {
 
-            width:
-                100%;
+            width: 100%;
+            height: 100%;
 
-            height:
-                100%;
+            object-fit: cover;
 
-            object-fit:
-                cover;
+            filter: contrast(1.15) saturate(1.10);
 
-            display:
-                block;
-
-            filter:
-                saturate(.9)
-                contrast(1.05);
+            animation: grottesca-clip 11s infinite;
 
         }
 
 
         /* =====================================================
-           PHILOSOPHY
+           LA DOMANDA · PHILOSOPHY
         ====================================================== */
 
-        .philosophy {
+        .domanda {
 
-            text-align:
-                center;
+            text-align: center;
 
-            padding:
-                180px 0;
+            padding: 180px 0;
 
-        }
+            background: var(--notte);
 
+            position: relative;
 
-        .philosophy-mark {
-
-            font-family:
-                "DM Mono",
-                monospace;
-
-            font-size:
-                12px;
-
-            color:
-                var(--muted);
-
-            letter-spacing:
-                .2em;
-
-            margin-bottom:
-                30px;
+            overflow: hidden;
 
         }
 
 
-        .philosophy h2 {
+        .domanda::before {
 
-            margin:
-                auto;
+            content: "";
 
-            max-width:
-                1100px;
+            position: absolute;
 
-            font-size:
-                clamp(
-                    3rem,
-                    7vw,
-                    7rem
-                );
-
-            line-height:
-                .9;
-
-            letter-spacing:
-                -.075em;
-
-        }
-
-
-        .philosophy h2 span {
+            inset: 0;
 
             background:
 
-                linear-gradient(
-                    100deg,
-                    var(--cyan),
-                    var(--violet),
-                    var(--pink)
+                radial-gradient(
+                    circle at 50% 50%,
+                    rgba(168,32,26,.13),
+                    transparent 62%
                 );
 
-            -webkit-background-clip:
-                text;
+            pointer-events: none;
 
-            background-clip:
-                text;
+        }
 
-            color:
-                transparent;
+
+        .domanda-etichetta {
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-style: italic;
+
+            font-size: 17px;
+
+            letter-spacing: .22em;
+
+            color: var(--oro-bisanzio);
+
+            margin-bottom: 48px;
+
+            position: relative;
+
+        }
+
+
+        .domanda h2 {
+
+            max-width: 1160px;
+
+            margin: auto;
+
+            font-family: "Bodoni Moda", serif;
+
+            font-size: clamp(2rem, 5.8vw, 5.8rem);
+
+            line-height: 1.2;
+
+            font-weight: 900;
+
+            position: relative;
+
+            letter-spacing: -.02em;
+
+        }
+
+
+        .domanda h2 .verso {
+            display: block;
+            margin-bottom: 14px;
+        }
+
+
+        .domanda h2 .verso-1 {
+            color: var(--marmo);
+        }
+
+
+        .domanda h2 .verso-2 {
+
+            color: transparent;
+
+            -webkit-text-stroke: 2px var(--oro-bisanzio);
+
+            font-style: italic;
+
+        }
+
+
+        .domanda h2 .verso-3 {
+
+            background: var(--rosso-pompei);
+
+            color: var(--marmo);
+
+            display: inline-block;
+
+            padding: 0 22px;
+
+            transform: skewX(-6deg);
+
+            font-style: italic;
 
         }
 
 
         /* =====================================================
-           FOOTER
+           COLOPHON · FOOTER
         ====================================================== */
 
         footer {
 
-            border-top:
-                1px solid
-                var(--line);
+            border-top: 3px double var(--oro-bisanzio);
 
-            padding:
-                60px 0 35px;
+            padding: 68px 0 36px;
 
-        }
+            background: var(--notte-2);
 
-
-        .footer-grid {
-
-            display:
-                flex;
-
-            justify-content:
-                space-between;
-
-            align-items:
-                flex-start;
-
-            gap:
-                40px;
+            position: relative;
 
         }
 
 
-        .footer-brand {
+        footer::before {
 
-            display:
-                flex;
+            content: "";
 
-            align-items:
-                center;
+            position: absolute;
 
-            gap:
-                12px;
+            top: -3px;
+            left: 0;
 
-            font-size:
-                22px;
+            width: 100%;
+            height: 3px;
 
-            font-weight:
-                700;
+            background:
 
-            letter-spacing:
-                -.04em;
-
-        }
-
-
-        .footer-logo {
-
-            width:
-                42px;
-
-            height:
-                42px;
-
-            object-fit:
-                contain;
-
-            display:
-                block;
+                repeating-linear-gradient(
+                    90deg,
+                    var(--rosso-pompei) 0 12px,
+                    transparent 12px 18px
+                );
 
         }
 
 
-        .footer-sub {
+        .colophon-fila {
 
-            color:
-                var(--muted);
+            display: flex;
 
-            margin-top:
-                10px;
+            justify-content: space-between;
 
-            font-size:
-                13px;
+            align-items: flex-start;
 
-        }
+            gap: 40px;
 
+            flex-wrap: wrap;
 
-        .footer-links {
-
-            display:
-                flex;
-
-            gap:
-                20px;
-
-            font-family:
-                "DM Mono",
-                monospace;
-
-            font-size:
-                11px;
-
-            text-transform:
-                uppercase;
-
-            letter-spacing:
-                .08em;
-
-            color:
-                var(--muted);
+            margin-bottom: 48px;
 
         }
 
 
-        .footer-links a:hover {
+        .colophon-insegna {
 
-            color:
-                white;
+            display: flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            font-family: "Bodoni Moda", serif;
+
+            font-weight: 900;
+
+            font-size: 20px;
+
+            letter-spacing: .06em;
+
+            color: var(--marmo);
 
         }
 
 
-        .copyright {
+        .colophon-logo {
 
-            margin-top:
-                60px;
+            width: 48px;
+            height: 48px;
 
-            padding-top:
-                20px;
+            object-fit: contain;
 
-            border-top:
-                1px solid
-                var(--line);
+            filter: brightness(1.15);
 
-            display:
-                flex;
+        }
 
-            justify-content:
-                space-between;
 
-            color:
-                #555560;
+        .colophon-sotto {
 
-            font-family:
-                "DM Mono",
-                monospace;
+            font-family: "Manrope", sans-serif;
 
-            font-size:
-                10px;
+            font-size: 13px;
 
-            letter-spacing:
-                .08em;
+            color: var(--cenere);
 
-            text-transform:
-                uppercase;
+            letter-spacing: .06em;
+
+            margin-top: 14px;
+
+        }
+
+
+        .colophon-collegamenti {
+
+            display: flex;
+
+            gap: 28px;
+
+            flex-wrap: wrap;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 12px;
+
+            font-weight: 500;
+
+            letter-spacing: .08em;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .colophon-collegamenti a {
+
+            color: var(--cenere);
+
+            text-decoration: none;
+
+            transition: color .2s ease;
+
+        }
+
+
+        .colophon-collegamenti a:hover {
+            color: var(--oro-bisanzio);
+        }
+
+
+        .diritti {
+
+            border-top: 1px solid var(--filo-tenue);
+
+            padding-top: 24px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: .12em;
+
+            color: var(--ombra);
+
+            text-transform: uppercase;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
 
         }
 
 
         /* =====================================================
-           RESPONSIVE — TABLET
+           RESPONSIVE
         ====================================================== */
 
         @media (max-width: 900px) {
 
-            .nav-links {
-                display:
-                    none;
-            }
+            .collegamenti { display: none; }
 
+            .proemio-fila,
+            .bottega-fila,
+            .hana-fila,
+            .opera {
 
-            .hero-grid,
-            .about-grid,
-            .hana-grid,
-            .project {
-
-                grid-template-columns:
-                    1fr;
+                grid-template-columns: 1fr;
 
             }
 
 
-            .hero {
-
-                padding-top:
-                    130px;
-
+            .discipline {
+                grid-template-columns: repeat(2, 1fr);
             }
 
 
-            .hero-art {
-
-                min-height:
-                    430px;
-
-                order:
-                    -1;
-
-            }
+            .disciplina:nth-child(2n) { border-right: none; }
 
 
-            .hero-logo-wrapper {
-
-                width:
-                    min(
-                        400px,
-                        72vw
-                    );
-
-            }
-
-
-            .domains {
-
-                grid-template-columns:
-                    repeat(2, 1fr);
-
-            }
-
-
-            .project-visual {
-
-                min-height:
-                    420px;
-
-            }
-
-
-            .hana-image {
-
-                min-height:
-                    400px;
-
-            }
+            .proemio-tondo { min-height: 520px; }
 
         }
 
-
-        /* =====================================================
-           RESPONSIVE — MOBILE
-        ====================================================== */
 
         @media (max-width: 600px) {
 
-            .container {
+            .proemio {
+                padding: 100px 0 50px;
+            }
 
-                width:
-                    min(
-                        calc(100% - 28px),
-                        var(--max-width)
-                    );
+
+            .proemio-fila { gap: 34px; }
+
+
+            .proemio-voce h1 { font-size: 3rem; }
+
+
+            .proemio-tondo {
+                min-height: 380px;
+                order: -1;
+            }
+
+
+            .discipline { grid-template-columns: 1fr; }
+
+
+            .disciplina {
+
+                border-right: none;
+                border-bottom: 1px solid var(--filo);
+                min-height: 280px;
 
             }
 
 
-            section {
+            .disciplina:nth-last-child(-n+4) {
+                border-bottom: 1px solid var(--filo);
+            }
 
-                padding:
-                    90px 0;
+
+            .disciplina:last-child { border-bottom: none; }
+
+
+            .colophon-fila,
+            .diritti {
+
+                flex-direction: column;
 
             }
 
 
-            .hero {
-
-                padding:
-                    120px 0
-                    70px;
-
-            }
+            .colophon-collegamenti { flex-wrap: wrap; }
 
 
-            .hero-grid {
+            .opera-sigillo {
 
-                gap:
-                    30px;
+                width: 64px;
+                height: 64px;
+                bottom: 16px;
+                left: 16px;
+                padding: 4px;
 
             }
 
-
-            .hero-art {
-
-                min-height:
-                    320px;
-
-            }
-
-
-            .hero-logo-wrapper {
-
-                width:
-                    min(
-                        310px,
-                        80vw
-                    );
-
-            }
-
-
-            .hero-logo {
-
-                width:
-                    70%;
-
-                height:
-                    70%;
-
-            }
-
-
-            .hero h1 {
-
-                font-size:
-                    4rem;
-
-            }
-
-
-            .hero-copy {
-
-                font-size:
-                    1rem;
-
-            }
-
-
-            .domains {
-
-                grid-template-columns:
-                    1fr;
-
-            }
-
-
-            .domain {
-
-                min-height:
-                    260px;
-
-            }
-
-
-            .project-visual {
-
-                min-height:
-                    340px;
-
-            }
-
-
-            .hana-image {
-
-                min-height:
-                    340px;
-
-            }
-
-
-            .footer-grid,
-            .copyright {
-
-                flex-direction:
-                    column;
-
-            }
-
-
-            .footer-links {
-
-                flex-wrap:
-                    wrap;
-
+            .opera-collegamenti {
+                flex-direction: column;
+                align-items: stretch;
             }
 
         }
 
 
         /* =====================================================
-           ACCESSIBILITY
+           ACCESSIBILITÀ
         ====================================================== */
 
         @media (prefers-reduced-motion: reduce) {
-
-            html {
-                scroll-behavior:
-                    auto;
-            }
 
             *,
             *::before,
             *::after {
 
-                animation-duration:
-                    0.01ms !important;
-
-                animation-iteration-count:
-                    1 !important;
-
-                transition-duration:
-                    0.01ms !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
 
             }
 
@@ -2548,98 +2644,96 @@
 
 <body>
 
-
     <!-- =====================================================
-         AMBIENT BACKGROUND
+         LINEA DI LUCE
     ====================================================== -->
 
-    <div class="orb one"></div>
-
-    <div class="orb two"></div>
-
-    <div class="orb three"></div>
+    <div class="linea-luce"></div>
 
 
     <!-- =====================================================
-         NAVIGATION
+         FREGIO
+    ====================================================== -->
+
+    <div class="fregio-sottile"></div>
+
+
+    <!-- =====================================================
+         NAVIGAZIONE
     ====================================================== -->
 
     <nav>
 
-        <a
-            href="#top"
-            class="nav-brand"
-        >
+        <a href="#top" class="insegna">
 
             <img
                 src="assets/DHA_logo_h.png"
-                alt="Digital__Hana__Arts® logo"
-                class="nav-logo"
+                alt="Digital Hana Arts"
+                class="insegna-logo"
             >
 
-            <span>
-                DHA
-            </span>
+            <span>Digital Hana Arts®</span>
 
         </a>
 
 
-        <div class="nav-links">
+        <div class="collegamenti">
 
-            <a href="#about">
-                Chi siamo
-            </a>
+            <a href="#about">Bottega</a>
 
-            <a href="#domains">
-                Domini
-            </a>
+            <a href="#domains">Discipline</a>
 
-            <a href="#work">
-                Opere
-            </a>
+            <a href="#work">Opere</a>
 
-            <a href="#hana">
-                Hana
-            </a>
+            <a href="#hana">Hana</a>
 
             <a
                 href="https://github.com/DigitalHanaArts"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                GitHub
+                Codice
             </a>
 
+        </div>
 
-        <div class="lang-switch">
 
-            <input type="checkbox" id="lang-toggle" class="lang-toggle">
+        <div class="lingua">
 
-            <label for="lang-toggle" class="lang-button">
-                [JA] ▾
+            <input
+                type="checkbox"
+                id="lingua-input"
+                class="lingua-input"
+                aria-label="Apri elenco lingue"
+            >
+
+            <label for="lingua-input" class="lingua-bottone">
+                [IT] ▾
             </label>
 
-            <div class="lang-dropdown" role="menu">
+            <div class="lingua-elenco" role="menu">
 
-                <a href="https://digitalhanaarts.github.io/it_dha/" class="lang-option active">[Italiano]</a>
+                <a href="#" class="lingua-voce attiva">[Italiano]</a>
 
-				<a href="https://digitalhanaarts.github.io/dha/" class="lang-option">[English]</a>
-
-                <a href="https://digitalhanaarts.github.io/dha-cn/" class="lang-option">[中文]</a>
-
-				<a href="https://digitalhanaarts.github.io/dha-per/" class="lang-option">[فارسی]</a>
+                <a href="https://digitalhanaarts.github.io/dha/" class="lingua-voce">[English]</a>
 				
-                <a href="https://digitalhanaarts.github.io/dha-ru/" class="lang-option">[Русский]</a>
+				<a href="https://digitalhanaarts.github.io/dha-es/" class="lingua-voce">[Español]</a>
+
+                <a href="https://digitalhanaarts.github.io/dha-cn/" class="lingua-voce">[中文]</a>
 				
-                <a href="https://digitalhanaarts.github.io/dha-jp/" class="lang-option">[日本語]</a>
-
-                <a href="https://digitalhanaarts.github.io/dha-ko/" class="lang-option">[조선어]</a>
-
-                <a href="https://digitalhanaarts.github.io/dha-hi/" class="lang-option">[हिन्दी]</a>
-
-                <a href="https://digitalhanaarts.github.io/dha-es/" class="lang-option">[Español]</a>
+				<a href="https://digitalhanaarts.github.io/dha-ru/" class="lingua-voce">[Русский]</a>
 				
-                <a href="https://digitalhanaarts.github.io/dha-yi/" class="lang-option">[ייִדיש]</a>
+				<a href="https://digitalhanaarts.github.io/dha-jp/" class="lingua-voce">[日本語]</a>
+
+                <a href="https://digitalhanaarts.github.io/dha-ko/" class="lingua-voce">[조선어]</a>
+
+                <a href="https://digitalhanaarts.github.io/dha-hi/" class="lingua-voce">[हिन्दी]</a>
+
+                <a href="https://digitalhanaarts.github.io/dha-per/" class="lingua-voce">[فارسی]</a>
+
+                <a href="https://digitalhanaarts.github.io/dha_ar/" class="lingua-voce">[العربية]</a>
+				
+				<a href="https://digitalhanaarts.github.io/dha-yi/" class="lingua-voce">[ייִדיש]</a>
 
             </div>
 
@@ -2649,70 +2743,68 @@
 
 
     <!-- =====================================================
-         HERO
+         PRINCIPALE
     ====================================================== -->
 
     <main id="top">
 
-        <section class="hero">
 
-            <div class="container">
+        <!-- =================================================
+             PRIMO ATTO · PROEMIO
+        ================================================== -->
 
-                <div class="hero-grid">
+        <section class="proemio">
 
+            <div class="calice">
 
-                    <div>
+                <div class="proemio-fila">
 
-                        <div class="eyebrow">
-                            Studio di creatività computazionale
+                    <div class="proemio-voce">
+
+                        <span class="proemio-etichetta">— Motore di Arte Computazionale —</span>
+
+                        <div class="proemio-epigrafe">
+
+                            «Fatti non foste a viver come bruti,
+                            ma per seguir virtute e canoscenza.»
+
+                            <span class="firma">— Dante Alighieri, Inferno XXVI</span>
+
                         </div>
-
 
                         <h1>
 
-                            <span>
-                                DIGITAL
-                            </span>
+                            <span class="parola parola-1">DIGITAL</span>
 
-                            <span class="gradient">
-                                HANA
-                            </span>
+                            <span class="parola parola-2">HANA</span>
 
-                            <span>
-                                ARTS
-                            </span>
+                            <span class="parola parola-3">ARTS®</span>
 
                         </h1>
 
+                        <p>
 
-                        <p class="hero-copy">
+                            Tra l'<strong>arte</strong> e l'<strong>algoritmo</strong>,
 
-                            Dove
-                            <strong>arte</strong>,
-                            <strong>dati</strong>,
-                            <strong>intelligenza artificiale</strong>
-                            e
-                            <strong>tecnologia decentralizzata</strong>
-                            convergono in nuove forme di espressione digitale.
+                            tra i <strong>dati</strong> e il <strong>sogno</strong>,
+
+                            tra l'<strong>intelligenza</strong> e l'<strong>istinto</strong> —
+
+                            D.H.A. opera nel vuoto d'inchiostro.
 
                         </p>
 
+                        <div class="proemio-azioni">
 
-                        <div class="hero-actions">
-
-                            <a
-                                href="#work"
-                                class="button primary"
-                            >
+                            <a href="#work" class="bottone bottone-primo">
                                 Esplora le opere
                             </a>
-
 
                             <a
                                 href="https://github.com/DigitalHanaArts"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="button secondary"
+                                class="bottone"
                             >
                                 GitHub ↗
                             </a>
@@ -2722,20 +2814,36 @@
                     </div>
 
 
-                    <div class="hero-art">
+                    <div class="proemio-tondo">
 
-                        <div class="hero-logo-wrapper">
+                        <div class="tondo-cornice">
 
-                            <img
-                                src="assets/DHA_logo.png"
-                                alt="Digital__Hana__Arts®"
-                                class="hero-logo"
-                            >
+                            <div class="cosmatesco"></div>
+
+                            <div class="ornamenti">
+
+                                <div class="anello anello-1"></div>
+                                <div class="anello anello-2"></div>
+                                <div class="anello anello-3"></div>
+                                <div class="anello anello-4"></div>
+
+                            </div>
+
+                            <div class="tondo-centro">
+
+                                <img
+                                    src="assets/DHA_neon.png"
+                                    alt="Sigillo del D.H.A."
+                                    loading="eager"
+                                >
+
+                            </div>
+
+                            <div class="tondo-firma">DHA · EDIZIONE ITALIANA</div>
 
                         </div>
 
                     </div>
-
 
                 </div>
 
@@ -2745,30 +2853,36 @@
 
 
         <!-- =================================================
-             MARQUEE
+             SFILATA
         ================================================== -->
 
-        <div class="marquee">
+        <div class="sfilata">
 
-            <div class="marquee-track">
+            <div class="sfilata-fila">
 
-                <span>ARTE</span>
-                <span>DATI</span>
+                <span>Arte</span>
+                <span>Dati</span>
                 <span>IA</span>
-                <span>BLOCKCHAIN</span>
-                <span>GENERATIVO</span>
-                <span>COMPUTAZIONALE</span>
-                <span>INTELLIGENZA</span>
-                <span>VISUALIZZAZIONE</span>
+                <span>Blockchain</span>
+                <span>Generativo</span>
+                <span>Computazionale</span>
+                <span>Intelligenza</span>
+                <span>Visualizzazione</span>
+                <span>Astrazione</span>
+                <span>Disegno</span>
+                <span>Bottega</span>
 
-                <span>ARTE</span>
-                <span>DATI</span>
+                <span>Arte</span>
+                <span>Dati</span>
                 <span>IA</span>
-                <span>BLOCKCHAIN</span>
-                <span>GENERATIVO</span>
-                <span>COMPUTAZIONALE</span>
-                <span>INTELLIGENZA</span>
-                <span>VISUALIZZAZIONE</span>
+                <span>Blockchain</span>
+                <span>Generativo</span>
+                <span>Computazionale</span>
+                <span>Intelligenza</span>
+                <span>Visualizzazione</span>
+                <span>Astrazione</span>
+                <span>Disegno</span>
+                <span>Bottega</span>
 
             </div>
 
@@ -2776,402 +2890,404 @@
 
 
         <!-- =================================================
-             ABOUT
+             BOTTEGA · ABOUT
         ================================================== -->
 
         <section id="about">
 
-            <div class="container">
+            <div class="calice">
 
-                <div class="about-grid">
+                <div class="bottega-fila">
 
-
-                    <div class="about-visual"></div>
-
-
-                    <div class="about-text">
-
-                        <div class="section-label">
-                            01 / Lo Studio
-                        </div>
-
-
-                        <h2>
-
-                            La tecnologia è
-
-                            <span class="gradient">
-                                materiale.
-                            </span>
-
-                        </h2>
-
-
-                        <p>
-
-                            Digital Hana Arts è uno studio sperimentale
-                            di creatività computazionale che esplora
-                            lo spazio tra tecnologia ed espressione
-                            artistica.
-
-                        </p>
-
-
-                        <p>
-
-                            Sviluppiamo software, sistemi visivi,
-                            esperimenti di apprendimento automatico,
-                            opere basate sui dati e risorse digitali
-                            orientate alla blockchain.
-
-                        </p>
-
-
-                        <p>
-
-                            La nostra domanda centrale è semplice:
-
-                            <strong>
-                                Cosa succede quando la computazione
-                                diventa un mezzo creativo?
-                            </strong>
-
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             DOMAINS
-        ================================================== -->
-
-        <section id="domains">
-
-            <div class="container">
-
-                <div class="section-label">
-                    02 / L'Ecosistema
-                </div>
-
-
-                <h2 class="section-title">
-
-                    Quattro domini.
-
-                    <span class="gradient">
-                        Un sistema.
-                    </span>
-
-                </h2>
-
-
-                <p class="section-intro">
-
-                    DHA opera attraverso discipline diverse,
-                    non all'interno di un'unica categoria tecnologica.
-
-                </p>
-
-
-                <div class="domains">
-
-
-                    <article class="domain art">
-
-                        <div class="domain-number">
-                            01
-                        </div>
-
-
-                        <div class="domain-symbol">
-                            ◇
-                        </div>
-
-
-                        <h3>
-                            Arte digitale
-                        </h3>
-
-
-                        <p>
-                            Sistemi generativi, arte algoritmica,
-                            fotografia computazionale e media digitali
-                            sperimentali.
-                        </p>
-
-                    </article>
-
-
-                    <article class="domain data">
-
-                        <div class="domain-number">
-                            02
-                        </div>
-
-
-                        <div class="domain-symbol">
-                            ◌
-                        </div>
-
-
-                        <h3>
-                            Scienza dei dati
-                        </h3>
-
-
-                        <p>
-                            Estrazione, analisi, visualizzazione dei
-                            dati, calcolo statistico e scoperta guidata
-                            dai dati.
-                        </p>
-
-                    </article>
-
-
-                    <article class="domain ai">
-
-                        <div class="domain-number">
-                            03
-                        </div>
-
-
-                        <div class="domain-symbol">
-                            ◎
-                        </div>
-
-
-                        <h3>
-                            Intelligenza
-                        </h3>
-
-
-                        <p>
-                            Apprendimento automatico, deep learning,
-                            visione artificiale e intelligenza
-                            artificiale generativa.
-                        </p>
-
-                    </article>
-
-
-                    <article class="domain chain">
-
-                        <div class="domain-number">
-                            04
-                        </div>
-
-
-                        <div class="domain-symbol">
-                            ⛓
-                        </div>
-
-
-                        <h3>
-                            Blockchain
-                        </h3>
-
-
-                        <p>
-                            NFT, risorse digitali, analisi blockchain
-                            ed ecosistemi creativi decentralizzati.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             WORK
-        ================================================== -->
-
-        <section id="work">
-
-            <div class="container">
-
-                <div class="section-label">
-                    03 / Opere selezionate
-                </div>
-
-
-                <h2 class="section-title">
-
-                    Dai
-
-                    <span class="gradient">
-                        pixel
-                    </span>
-
-                    all'intelligenza.
-
-                </h2>
-
-
-                <div class="project">
-
-
-                    <div class="project-visual">
+                    <div class="bottega-immagine">
 
                         <img
-                            src="assets/DHA_Vision.png"
-                            alt="DHA Vision — Digital__Hana__Arts®"
+                            src="assets/DHA_logo.png"
+                            alt="Rete di Digital Hana Arts"
                             loading="lazy"
                         >
 
                     </div>
 
 
-                    <div class="project-info">
+                    <div class="bottega-testo">
 
-                        <div class="project-tag">
-                            Piattaforma sperimentale
-                        </div>
+                        <span class="sezione-etichetta">I · La Bottega</span>
 
+                        <h2>
 
-                        <h3>
-                            DHA<br>
-                            Vision
-                        </h3>
+                            La tecnica
 
+                            è
+
+                            <span class="sottolineato">materia.</span>
+
+                        </h2>
 
                         <p>
 
-                            Una piattaforma di arte computazionale
-                            basata su Julia che esplora come le
-                            fotografie possano essere trasformate
-                            in nuove opere digitali attraverso
-                            elaborazione delle immagini, apprendimento
-                            automatico e sistemi generativi.
+                            Digital Hana Arts è una bottega sperimentale
+
+                            di creatività computazionale che opera
+
+                            nello <strong>spazio interstiziale</strong>
+
+                            tra tecnologia ed espressione artistica.
 
                         </p>
 
+                        <p>
 
-                        <div class="tech">
+                            Costruiamo software, sistemi visivi,
 
-                            <span>
-                                Julia
-                            </span>
+                            esperimenti di apprendimento automatico,
 
-                            <span>
-                                Flux
-                            </span>
+                            opere d'arte guidate dai dati e beni
 
-                            <span>
-                                Apprendimento automatico
-                            </span>
+                            digitali orientati alla blockchain —
 
-                            <span>
-                                Elaborazione delle immagini
-                            </span>
+                            il tutto con una <strong>sensibilità post-umana</strong>.
 
-                            <span>
-                                Arte generativa
-                            </span>
+                        </p>
+
+                        <p>
+
+                            La nostra domanda centrale non è semplice:
+
+                            <strong>che cosa accade quando il calcolo
+
+                            diventa mezzo creativo?</strong>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LE DISCIPLINE · DOMAINS
+        ================================================== -->
+
+        <section id="domains">
+
+            <div class="calice">
+
+                <span class="sezione-etichetta">II · Le Discipline</span>
+
+                <h2 class="sezione-titolo">
+
+                    Quattro discipline.
+
+                    <span class="ombra">Un sistema.</span>
+
+                    <span class="sbarrato">Senza confini.</span>
+
+                </h2>
+
+                <p class="sezione-proemio">
+
+                    D.H.A. opera attraverso le discipline, non dentro
+
+                    un'unica categoria tecnologica.
+
+                    Questo è il reticolo disfatto.
+
+                </p>
+
+
+                <div class="discipline">
+
+
+                    <article class="disciplina" data-numero="I">
+
+                        <div class="disciplina-simbolo">◇</div>
+
+                        <h3>Arte Digitale</h3>
+
+                        <p>
+                            Sistemi generativi, arte algoritmica,
+                            fotografia computazionale
+                            e media digitali sperimentali.
+                        </p>
+
+                    </article>
+
+
+                    <article class="disciplina" data-numero="II">
+
+                        <div class="disciplina-simbolo">◌</div>
+
+                        <h3>Scienza dei Dati</h3>
+
+                        <p>
+                            Estrazione di dati, analisi, visualizzazione,
+                            calcolo statistico
+                            e scoperta guidata dai dati.
+                        </p>
+
+                    </article>
+
+
+                    <article class="disciplina" data-numero="III">
+
+                        <div class="disciplina-simbolo">◎</div>
+
+                        <h3>Intelligenza</h3>
+
+                        <p>
+                            Apprendimento automatico, apprendimento
+                            profondo, visione artificiale
+                            e intelligenza artificiale generativa.
+                        </p>
+
+                    </article>
+
+
+                    <article class="disciplina" data-numero="IV">
+
+                        <div class="disciplina-simbolo">⛓</div>
+
+                        <h3>Blockchain</h3>
+
+                        <p>
+                            NFT, beni digitali, analisi della catena
+                            ed ecosistemi creativi
+                            decentralizzati.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LE OPERE · PROJECTS
+        ================================================== -->
+
+        <section id="work">
+
+            <div class="calice">
+
+                <span class="sezione-etichetta">III · Opere Scelte</span>
+
+                <h2 class="sezione-titolo">
+
+                    Dai <span class="ombra">pixel</span>
+
+                    all'<span class="sbarrato">intelligenza</span>.
+
+                </h2>
+
+
+                <!-- =========================================
+                     MLabChain · Catena di Laboratorio
+                ========================================== -->
+                <div class="opera ampia">
+
+                    <div class="opera-immagine">
+
+                        <img
+                            src="assets/MLabChain_v3_Banner.png"
+                            alt="MLabChain — piattaforma di ricerca blockchain"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/mlabchain.png"
+                            alt="Sigillo MLabChain"
+                            class="opera-sigillo"
+                        >
+
+                    </div>
+
+                    <div class="opera-testo">
+
+                        <span class="opera-etichetta">— Protocollo Blockchain —</span>
+
+                        <h3>Catena<br>di <em>Laboratorio</em></h3>
+
+                        <p>
+
+                            Una piattaforma di ricerca e ingegneria
+
+                            blockchain — che intreccia scienza di
+
+                            laboratorio, infrastruttura decentralizzata
+
+                            e calcolo verificabile.
+
+                            Addestrare, registrare, verificare.
+
+                        </p>
+
+                        <div class="tecnologie">
+
+                            <span>Blockchain</span>
+                            <span>Distribuito</span>
+                            <span>Web3</span>
+                            <span>Fisica delle Alte Energie</span>
+                            <span>Ricerca</span>
 
                         </div>
 
+                        <div class="opera-collegamenti">
 
-                        <br>
+                            <a
+                                href="https://github.com/DigitalHanaArts/MLabChain"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="bottone bottone-primo"
+                            >
+                                GitHub ↗
+                            </a>
 
+                            <a
+                                href="https://gitlab.cern.ch/abavarch/labchain"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="bottone"
+                            >
+                                GitLab ↗
+                            </a>
+
+                            <a
+                                href="https://digitalhanaarts.github.io/mlc/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="bottone"
+                            >
+                                Sito web ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DHA Vision -->
+                <div class="opera">
+
+                    <div class="opera-immagine">
+
+                        <img
+                            src="assets/DHA_Vision.png"
+                            alt="DHA Vision"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="opera-testo">
+
+                        <span class="opera-etichetta">— Piattaforma Sperimentale —</span>
+
+                        <h3>DHA<br><em>Vision</em></h3>
+
+                        <p>
+
+                            Una piattaforma d'arte computazionale
+
+                            basata su Julia, che esplora come le
+
+                            fotografie possano trasformarsi — attraverso
+
+                            l'elaborazione delle immagini, l'apprendimento
+
+                            automatico e i sistemi generativi — in nuove
+
+                            opere d'arte digitale.
+
+                        </p>
+
+                        <div class="tecnologie">
+
+                            <span>Julia</span>
+                            <span>Flux</span>
+                            <span>Apprendimento automatico</span>
+                            <span>Elaborazione immagini</span>
+                            <span>Arte generativa</span>
+
+                        </div>
 
                         <a
                             href="https://github.com/DigitalHanaArts/DHA-Vision"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="button secondary"
+                            class="bottone"
                         >
-                            Vedi progetto ↗
+                            Vedi il progetto ↗
                         </a>
 
                     </div>
 
-
                 </div>
 
-            </div>
 
-        </section>
+                <!-- OpenSea -->
+                <div class="opera">
 
-
-        <!-- =================================================
-             HANA
-        ================================================== -->
-
-        <section
-            id="hana"
-            class="hana"
-        >
-
-            <div class="container">
-
-                <div class="hana-grid">
-
-
-                    <div class="hana-copy">
-
-                        <div class="section-label">
-                            04 / Origine
-                        </div>
-
-
-                        <h2>
-
-                            <span>
-                                Ecco
-                            </span>
-
-                            <span class="hana-gradient">
-                                Hana.
-                            </span>
-
-                        </h2>
-
-
-                        <p>
-
-                            Digital Hana Arts prende il nome da Hana,
-                            la gattina al centro dell'identità visiva.
-
-                        </p>
-
-
-                        <p>
-
-                            La sua presenza introduce qualcosa di
-                            intenzionalmente umano e organico in un
-                            mondo altrimenti computazionale:
-
-                            <strong>
-                                curiosità, individualità e carattere.
-                            </strong>
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="hana-image">
+                    <div class="opera-immagine">
 
                         <img
-                            src="assets/Hana_the_kitten.jpeg"
-                            alt="Hana the kitten"
+                            src="assets/opensea.io.jpeg"
+                            alt="Collezione OpenSea"
                             loading="lazy"
                         >
 
                     </div>
 
+                    <div class="opera-testo">
+
+                        <span class="opera-etichetta">— Collezione NFT —</span>
+
+                        <h3>Collezione<br><em>OpenSea</em></h3>
+
+                        <p>
+
+                            Esplora la collezione ufficiale di
+
+                            Digital Hana Arts su OpenSea —
+
+                            beni digitali selezionati, opere
+
+                            generative e creazioni basate
+
+                            sulla blockchain.
+
+                        </p>
+
+                        <div class="tecnologie">
+
+                            <span>NFT</span>
+                            <span>Ethereum</span>
+                            <span>Arte digitale</span>
+                            <span>Blockchain</span>
+                            <span>OpenSea</span>
+
+                        </div>
+
+                        <a
+                            href="https://opensea.io/Digital__Hana__Arts"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bottone"
+                        >
+                            Visita OpenSea ↗
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -3181,35 +3297,87 @@
 
 
         <!-- =================================================
-             PHILOSOPHY
+             HANA · ORIGINE
         ================================================== -->
 
-        <section class="philosophy">
+        <section id="hana">
 
-            <div class="container">
+            <div class="calice">
 
+                <div class="hana-fila">
 
-                <div class="philosophy-mark">
-                    05 / La Domanda
+                    <div class="hana-voce">
+
+                        <span class="sezione-etichetta">IV · L'Origine</span>
+
+                        <h2>
+
+                            <span class="parola parola-1">Incontra</span>
+
+                            <span class="parola parola-2">Hana.</span>
+
+                        </h2>
+
+                        <p>
+
+                            Digital Hana Arts prende il nome da Hana —
+
+                            la gattina al cuore dell'identità visiva
+
+                            della bottega.
+
+                        </p>
+
+                        <p>
+
+                            La sua presenza introduce qualcosa di
+
+                            deliberatamente umano e organico in un mondo
+
+                            altrimenti computazionale:
+
+                            <strong>curiosità, individualità e carattere.</strong>
+
+                        </p>
+
+                    </div>
+
+                    <div class="hana-immagine">
+
+                        <img
+                            src="assets/Hana_the_kitten.jpeg"
+                            alt="Hana — la gattina"
+                            loading="lazy"
+                        >
+
+                    </div>
+
                 </div>
 
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LA DOMANDA · PHILOSOPHY
+        ================================================== -->
+
+        <section class="domanda">
+
+            <div class="calice">
+
+                <span class="domanda-etichetta">V · La Domanda</span>
 
                 <h2>
 
-                    Cosa succede quando
+                    <span class="verso verso-1">Che cosa accade</span>
 
-                    <span>
-                        la computazione
-                    </span>
+                    <span class="verso verso-2">quando il calcolo</span>
 
-                    diventa un
-
-                    <span>
-                        mezzo creativo?
-                    </span>
+                    <span class="verso verso-3">diventa mezzo creativo?</span>
 
                 </h2>
-
 
             </div>
 
@@ -3220,44 +3388,36 @@
 
 
     <!-- =====================================================
-         FOOTER
+         COLOPHON
     ====================================================== -->
 
     <footer>
 
-        <div class="container">
+        <div class="calice">
 
-
-            <div class="footer-grid">
-
+            <div class="colophon-fila">
 
                 <div>
 
-                    <div class="footer-brand">
+                    <div class="colophon-insegna">
 
                         <img
                             src="assets/DHA_logo.png"
-                            alt="Digital__Hana__Arts® logo"
-                            class="footer-logo"
+                            alt="Digital Hana Arts"
+                            class="colophon-logo"
                         >
 
-                        <span>
-                            DIGITAL HANA ARTS
-                        </span>
+                        <span>Digital Hana Arts®</span>
 
                     </div>
 
-
-                    <div class="footer-sub">
-
+                    <div class="colophon-sotto">
                         Arte × Dati × Intelligenza × Blockchain
-
                     </div>
 
                 </div>
 
-
-                <div class="footer-links">
+                <div class="colophon-collegamenti">
 
                     <a
                         href="https://github.com/DigitalHanaArts"
@@ -3267,30 +3427,19 @@
                         GitHub
                     </a>
 
-
-                    <a href="#top">
-                        Torna su ↑
-                    </a>
+                    <a href="#top">Torna su ↑</a>
 
                 </div>
 
-
             </div>
 
+            <div class="diritti">
 
-            <div class="copyright">
+                <span>© 2026 Digital Hana Arts®</span>
 
-                <span>
-                    © 2026 Digital Hana Arts®
-                </span>
-
-
-                <span>
-                    Il calcolo come mezzo creativo.
-                </span>
+                <span>Il calcolo come mezzo creativo</span>
 
             </div>
-
 
         </div>
 
